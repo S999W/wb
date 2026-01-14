@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -9,14 +9,20 @@ import WorkWithMePage from './components/WorkWithMePage';
 import ThanksPage from './components/ThanksPage';
 
 // Wrapper for the Home View
-const Home: React.FC = () => (
-  <main className="space-y-12">
-    <Hero />
-    <WritingSection />
-    <MusicSection />
-    <SocialsSection />
-  </main>
-);
+const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = 'home - steezy';
+  }, []);
+
+  return (
+    <main className="space-y-12">
+      <Hero />
+      <WritingSection />
+      <MusicSection />
+      <SocialsSection />
+    </main>
+  );
+};
 
 const App: React.FC = () => {
   return (

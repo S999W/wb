@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const ThanksPage: React.FC = () => {
+  useEffect(() => {
+    document.title = 'thank you';
+  }, []);
+
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 text-center max-w-4xl mx-auto space-y-8 animate-fade-in-up">
       <div className="space-y-4">

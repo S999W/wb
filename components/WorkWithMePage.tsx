@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const WorkWithMePage: React.FC = () => {
+  useEffect(() => {
+    document.title = 'apply - steezy';
+  }, []);
+
   const [budget, setBudget] = useState('');
   const [timeline, setTimeline] = useState('');
   const [fit, setFit] = useState('');
