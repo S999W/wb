@@ -92,7 +92,7 @@ const SocialsSection: React.FC = () => {
         </a>
       </div>
       <p className="text-neutral-700 mt-12 text-sm">
-        © 2026 steezy. all rights reserved.
+        © 2026 D. Waves. All Rights Reserved.
       </p>
     </footer>
   );
